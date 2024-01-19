@@ -1,0 +1,350 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #020312;
+    --gradient: linear-gradient(45deg, #124700, #4fb830, #a6f58e);
+    --gra-elements: linear-gradient(45deg, #89c75a, #106b18);
+    --text-color: #fff;
+    --main-color: #098800;
+    --second-color: gray;
+    --other-color: #001E22;
+    --h1-font: 5.2rem;
+    --h2-font: 3.5rem;
+    --p-font: 1.1rem;
+}
+
+body {
+    color: var(--text-color);
+    background: var(--bg-color);
+    background: linear-gradient(270deg, #050726, #152616, #020312);
+    background-size: 600% 600%;
+
+    -webkit-animation: GradientAnimation 36s ease infinite;
+    -moz-animation: GradientAnimation 36s ease infinite;
+    animation: GradientAnimation 36s ease infinite;
+}
+
+.home1-intro, .about, .services, .guide, .horton_park, .pk-tb, .ud_pk, .depar-intro, .gal, .depar-map, .leo-intro, .venue, .venue2, .threats, .brief, .footer, .portfolio, .main-text, .main-text2, .info, .gal, .navigation {
+    animation: transitionIn 0.75s;
+}
+
+header {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 22px 16%;
+    border-bottom: 1px solid transparent;
+    transition: all .40s ease;
+}
+
+.logo {
+    width: 135px;
+    height: auto;
+}
+
+span {
+    background-image: linear-gradient(45deg, #007e43, #8CC63F);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    padding: 10px 25px;
+    margin: 0 2px;
+    border-radius: 0.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+nav a,
+nav a:after,
+nav a:before {
+  transition: all .5s;
+}
+
+.navbar a:hover:not(.dropdown) {
+    color: var(--text-color);
+}
+
+.navbar a:after {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: 1px;
+    content: '.';
+    color: transparent;
+    background: linear-gradient(45deg, #00331f, #008535);
+    visibility: none;
+    opacity: 0;
+    z-index: -1;
+    border-radius: 5px;
+}
+
+.navbar a:hover:after {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    padding-top: 25px;
+    border-radius: 1px;
+    z-index: 1000;
+    transition: all 0.4s ease;
+}
+
+.navbar li:hover .dropdown {
+    background-color: rgba(18, 20, 28, 0.3);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 5.5%;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transition: all .40s ease;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.dropdown li {
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.dropdown a {
+    color: var(--text-color);
+}
+
+.navbar li:hover ul.dropdown {
+    display: flex;
+}
+
+#menu-icon {
+    font-size: 36px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    z-index: 1001; 
+    cursor: pointer;
+    display: none;
+    position: absolute; 
+    top: 5px; 
+    right: 20px; 
+}
+
+header.sticky {
+    padding: 10px 16%;
+    background: var(--bg-color);
+    border-bottom: 1px solid #0e1630;
+}
+
+a:is(:link, :active, :visited).active {
+    color: #027d05;
+}
+
+.footer {
+    background: #001114;
+    padding: 20px 0px;
+    box-shadow: 0 0 10px 1px var(--main-color);
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    margin-top: 19%;
+}
+
+.footer .roww {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size :0.8em;
+}
+
+.footer .roww .flogo {
+    text-decoration: none;
+    color: white;
+    padding-right: 41px;
+}
+
+.footer .roww .ite1 {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .roww .ite1:hover{
+    color: #fff;
+}
+
+.footer .roww ul{
+    width: 100%;
+}
+
+.footer .roww ul li{
+    display: inline-block;
+    margin: 10px 30px;
+}
+
+.top {
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2.1rem;
+}
+
+.top img {
+    color: var(--text-color);
+    background-color: var(--main-color);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+.t {
+    font-weight: 100;
+    font-style: italic;
+    text-transform: lowercase;
+    display: block;
+}
+
+@media (max-width:720px){
+    .footer {
+    text-align: left;
+    padding: 5%;
+    }
+
+    .footer .roww ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+    }
+
+    .footer .roww .flogo {
+    padding: 0;
+    margin: 0;
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+@-webkit-keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes GradientAnimation {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@media (max-width: 1325px) {
+    header {
+        padding: 16px 3%;
+    }
+
+    header.sticky {
+        padding: 8px 3%;
+    }
+
+    section {
+        padding: 130px 3% 60px;
+    }
+}
+
+@media (max-width: 830px) {
+    #menu-icon {
+        display: flex;
+    }
+
+    .navbar {
+        position: absolute;
+        top: -600px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--other-color);
+        text-align: left;
+        transition: all .40s ease;
+        z-index: 1001;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .navbar.active {
+        top: 100%;
+    }
+
+    :root {
+        --h1-font: 3.7rem;
+        --h2-font: 2.7rem;
+    }
+
+    .dropdown {
+        display: none;
+        position: relative;
+        background: var(--other-color);
+    }
+
+    .navbar li:hover .dropdown {
+        display: block;
+        position: relative;
+        width: 100%; 
+    }
+
+    .dropdown li {
+        padding-bottom: -20px; 
+        text-align: left; 
+    }
+}

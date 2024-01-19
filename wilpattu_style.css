@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.leo-intro {
+    padding: 160px 16% 90px;
+}
+
+.leo-intro {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.leo-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.leo-text h1 {
+    margin: 20px 0;
+    font-size: var(--h1-font);
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+
+.button {
+    float: left;
+    padding: 14px 40px;
+    border-radius: 0.5rem;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 20px;
+    background: var(--gra-elements);
+    color: var(--text-color);
+    transition: all .40s ease;
+}
+
+.button:hover {
+    transform: scale(1.01) translate(5px);
+    background: transparent;
+    border: 1px solid var(--main-color);
+}
+
+.leo-text br {
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: -2%;
+}
+
+.car {
+    margin: 150px auto;
+    width: 70%;
+    background-color: var(--other-color);
+    border: solid 3px var(--main-color);
+    color: var(--text-color);
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 50px;
+    transition: all .40s;
+}
+
+.car img {
+    max-width: 320px;
+    float: left;
+    border: 3px solid var(--main-color);
+    border-radius: 10px;
+    margin-right: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.car-txt p {
+    color: lightgray;
+    font-size: 20px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+
+}
+
+.car:hover {
+    transform: translateY(-5px);
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-text h2 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.main-text h4 {
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.gal-card {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-area {
+    display: flex;
+    gap: 2rem;
+}
+
+.box {
+    width: 320px;
+    height: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid var(--main-color);
+    position: relative;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all .40s ease;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: var(--other-color)64;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .40s ease;
+}
+
+.box:hover .overlay {
+    right: 0;
+}
+
+.box:hover img {
+    transform: scale(1.2);
+}
+
+.overlay h3 {
+    font-size: 58px;
+    font-weight: 500;
+}
+
+.overlay p {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 48px 0;
+    font-weight: 400;
+}
+
+.overlay a {
+    color: wheat;
+    background: linear-gradient(45deg, #00331f, #008535);
+    padding: 10px 20px;
+    width: 150px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.overlay a:hover {
+    box-shadow: 0px 0px 0 2px wheat;
+    transition: .40s ease;
+}
+
+.main-container {
+    padding: 30px;
+}
+
+/* HEADING */
+
+.nav_title {
+    text-align: center;
+}
+
+.nav_text {
+    font-weight: 600;
+}
+
+.nav_sub {
+    margin: 10px 0px;
+    color: var(--second-color);
+    font-size: 25px;
+    transition: all 0.5s;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    margin: 40px;
+    padding: 30px;
+    width: 280px; 
+    height: 320px; 
+    display: grid;
+    grid-template-rows: 20px 50px 1fr 50px;
+    position: relative;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border-radius: 10px; 
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+    transition: all 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.07) rotate(5deg); 
+}
+
+.card__link {
+    position: relative;
+    top: 10rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.card__link::after {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    content: "";
+    width: 0%;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.5s;
+}
+
+.card__link:hover::after {
+    width: 100%;
+}
+
+.card__title {
+    position: relative;
+    top: 50px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.card-1 {
+    background: linear-gradient(to right, #509A4E, var(--other-color));
+}
+
+.card-2 {
+    background: linear-gradient(to right, #158D63, var(--other-color));
+}
+
+.card-3 {
+    background: linear-gradient(to right, #007D70, var(--other-color));
+}
+
+.card-4 {
+    background: linear-gradient(to right, #006B73, var(--other-color));
+}
+
+.card-5 {
+    background: linear-gradient(to right, #18596A, var(--other-color));
+}
+
+.card-6 {
+    background: linear-gradient(to right, #2F4858, var(--other-color));
+}
+
+
+.navigation .main-text {
+    margin-bottom: 2.5rem;
+}
+
+@media (max-width: 1600px) {
+    .cards {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 970px) {
+
+    .navigation {
+        margin-top: 10%;
+    }
+
+    :root{
+        --h1-font: 4.2rem;
+        --h2-font: 2.9rem;
+        --p-font: 1rem;        
+    }
+
+    .leo-intro {
+        height: 85vh;
+        padding: 70px 3% 60px;
+        margin-bottom: -40%;
+    }
+
+    .car {
+        margin-top: 50%;
+    }
+
+    .car img {
+        float: right;
+        margin-bottom: 20px;
+    }
+
+    .car-txt p {
+        text-align: center;
+    }
+
+    .main-text {
+        margin-top: -20%;
+    }
+
+    .box-area {
+        display: block;
+    }
+
+    .box {
+        margin-bottom: 50px;
+    }
+  
+    .gal-card {
+        width: 100%;
+        height: 1%;
+        margin-top: 10%;
+        margin-bottom: -10%;
+    }
+
+}
+
+@media (max-width:670px) {
+    .car img {
+        width: 70%;
+        height: 70%;
+    }
+}

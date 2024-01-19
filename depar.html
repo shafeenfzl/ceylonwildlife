@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to Google Fonts and external stylesheets -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;01,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" type="text/css" href="depar_style.css">
+    <link rel="stylesheet" type="text/css" href="globalstyle.css">
+
+    <!-- Title of the webpage -->
+    <title>CeylonWildlife</title>
+    <link rel="icon" type="image/x-icon" href="assets/bird-svgrepo-com.svg">
+
+</head>
+<body>
+    <!-- Header section with logo, menu icon, and navigation -->
+    <header>
+        <!-- Logo and menu icon -->
+        <h2 class="logo">ceylon<span>wildlife</span></h2>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAGZJREFUSEvtlrENACAMw8pnnMZpfAYTC1W3CDOEA2JhUpUW0GkQNwx+Zt6qj+ohdp7yKtVLDE6c78DiC+c4t/o46WLX8877rlzYOGGqxU/scYryB4KVCwNja9GtlhvwWpQrrQIx1Rt3TwofeC3yFwAAAABJRU5ErkJggg==" id="menu-icon">
+
+        <!-- Navigation menu -->
+        <nav>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro.html">Intro</a></li>
+                <li><a href="depar.html">Depar.</a></li>
+                <li class="dropdown-link"><a href="#">Locations &#x25BE;</a>
+                    <ul class="dropdown">
+                        <li><a href="yala.html">Yala</a></li>
+                        <li><a href="wilpattu.html">Wilpattu</a></li>
+                    </ul>
+                </li>
+                <li><a href="leo.html">Leopard</a></li>
+                <li><a href="ani.html">Animals</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction section with video background -->
+    <section class="depar-intro" id="depar-intro">
+        <video autoplay loop muted class="depar-video">
+          <source src="https://d1y20zyq0hbpn1.cloudfront.net/vid-depar10.mp4" type="video/mp4">
+        </video>
+        <!-- Text overlay on the video background -->
+        <div class="depar-text">
+            <h1>Department <br> Of Wild<span>life</span> <br>Conservation</h1>
+          <a href="#gal" class="button">Explore</a>
+        </div>
+    </section>
+    
+    <!-- Gallery section showcasing protected areas in Sri Lanka -->
+    <section class="gal" id="gal">
+        <div class="content">
+            <!-- Paragraph about the Department of Wildlife Conservation -->
+            <p>The Department of Wildlife Conservation in Sri Lanka serves as a crucial guardian of the nation's biodiversity, overseeing the protection of diverse ecosystems within national parks and wildlife reserves. Balancing the needs of local communities with the imperative of conservation, the department employs scientific expertise, technology, and community engagement to mitigate human-wildlife conflicts, protect endangered species, and promote habitat restoration. Their efforts play a vital role in preserving Sri Lanka's unique natural heritage, fostering a sustainable coexistence between humans and the rich array of wildlife that inhabits the country. Below are some of the protected areas in Sri Lanka.</p>
+            
+            <!-- Gallery of protected areas with images and captions -->
+            <div class="gallery">
+                <figure class="galleryItem">
+                    <img src="assets/sin2.JPG" alt="Plant">
+                    <figcaption>Sinharaja Forest Reserve</figcaption>
+                </figure>
+                <!-- Add similar figures for other protected areas -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Map section with Google Maps location of the Department -->
+    <section class="depar-map">
+        <div class="main-text">
+            <h2>Finding the Department</h2>
+            <h4>Google Maps Location to Department Office</h4>
+        </div>
+        
+        <!-- Google Maps embedded iframe -->
+        <div class="map-container">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31687.202514094577!2d79.88915440602784!3d6.902523658183574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1705518235646!5m2!1sen!2slk" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer section with site information and external links -->
+    <footer>
+        <!-- Footer content with logo, reference links, and copyright information -->
+        <div class="footer">
+            <div class="roww">
+                <a class="flogo" href="#">ceylon<span>wildlife</span></a>
+            </div>
+        
+            <div class="roww">
+                <!-- List of external reference links -->
+                <ul>
+                    <li><a class="ite1" href="#" target="_blank">References</a></li>
+                    <li><a class="ite1" href="https://www.srilanka.travel/emergency-services" target="_blank">Sri Lanka Emergency Services</a></li>
+                    <li><a class="ite1" href="https://jentje.com/languages-of-sri-lanka/" target="_blank">Language Guide</a></li>
+                    <li><a class="ite1" href="https://sltda.gov.lk/en" target="_blank">Tourism Development Authority</a></li>
+                    <li><a class="ite1" href="https://www.meteo.gov.lk/index.php?lang=en" target="_blank">Weather Forecast</a></li>
+                </ul>
+            </div>
+        
+            <div class="roww">
+                <!-- Copyright information and year -->
+                ceylonwildlife © 2024 - all rights reserved | sfn.fzl 
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button with upward arrow icon -->
+    <a href="#" class="top"><img src="assets/bx-up-arrow-alt.svg" alt=""></a>
+
+    <!-- JavaScript file for additional functionality -->
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
