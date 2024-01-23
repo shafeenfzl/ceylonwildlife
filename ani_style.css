@@ -1,0 +1,222 @@
+:root {
+    --bg-color: #020312;
+    --text-color: #fff;
+    --main-color: #098800;
+    --second-color: gray;
+    --other-color: var(--other-color);
+    --h1-font: 5.2rem;
+    --h2-font: 3.5rem;
+    --p-font: 1.1rem;
+}
+
+.leo-intro {
+    padding: 160px 16% 90px;
+}
+
+.leo-intro {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.leo-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.leo-text h1 {
+    margin: 20px 0;
+    font-size: var(--h1-font);
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+
+.button {
+    float: left;
+    padding: 14px 40px;
+    border-radius: 0.5rem;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 20px;
+    background: var(--gra-elements);
+    color: var(--text-color);
+    transition: all .40s ease;
+}
+
+.button:hover {
+    transform: scale(1.01) translate(5px);
+    background: transparent;
+    border: 1px solid var(--main-color);
+}
+
+
+.leo-text br {
+    text-align: center;
+}
+
+.brief {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.br-row {
+    width: 80%;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px 30px;
+    background-color: var(--other-color);
+    margin-top: 5rem;
+    padding: 60px;
+    border: 3px solid var(--main-color);
+}
+
+.br-row .left {
+    overflow: hidden;
+}
+
+.br-row img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .40s ease;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+
+}
+
+.br-row .right {
+    display: flex;
+    align-items: center;
+}
+
+.br-row .content {
+    padding-left: 20px;
+}
+
+.br-row p {
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-text h2 {
+    font-size: var(--h2-font);
+    margin-bottom: 10px;
+}
+
+.main-text h4 {
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.portfolio {
+    padding: 160px 16% 90px;
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.portfolio-content a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.row img {
+    height: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+    transition: all .40s ease;
+    filter: grayscale();
+
+}
+
+.row {
+    padding: 25px;
+    background: var(--other-color);
+    border-radius: 0.5rem;
+    transition: all .40s ease;
+}
+
+.main-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.row h3 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.row h6 {
+    color: var(--main-color);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.row:hover {
+    transform: scale(1.01) translateY(-5px);
+    cursor: pointer;
+
+    img {
+        filter: none;
+    }
+}
+
+@media (max-width: 970px) {
+
+    .leo-intro {
+        height: 85vh;
+        padding: 70px 3% 60px;
+    }
+}
+
+@media (max-width: 991px) {
+    .br-row .content {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .br-row {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 970px) {
+
+    .portfolio {
+        padding: 70px 3% 60px;
+    }
+    
+}

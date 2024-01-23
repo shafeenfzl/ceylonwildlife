@@ -1,0 +1,212 @@
+.leo-intro,
+.threats,
+.venue {
+    padding: 160px 16% 90px;
+}
+
+.leo-intro {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url(assets/bgleo.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+
+.leo-text h1 {
+    margin: 20px 0;
+    font-size: var(--h1-font);
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: 2px;
+}
+
+.button {
+    float: left;
+    padding: 14px 40px;
+    border-radius: 0.5rem;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 20px;
+    background: var(--gra-elements);
+    color: var(--text-color);
+    transition: all .40s ease;
+}
+
+.button:hover {
+    transform: scale(1.01) translate(5px);
+    background: transparent;
+    border: 1px solid var(--main-color);
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-text h2 {
+    font-size: var(--h2-font);
+    margin-bottom: 10px;
+}
+
+.main-text h4 {
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.main-text2 {
+    text-align: center;
+}
+
+.main-text2 h2 {
+    font-size: var(--h2-font);
+    margin-bottom: 10px;
+}
+
+.main-text2 h4 {
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.venue-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.box {
+    padding: 45px;
+    background: var(--other-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: 2px solid var(--main-color);
+    transition: all .40s ease;
+}
+
+.box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0;
+    transition: all .40s ease;
+}
+
+.box p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 30px;
+}
+
+.box:hover {
+    transform: scale(1.01) translate(5px);
+    cursor: default;
+}
+
+.box:hover h3 {
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box img {
+    border-radius: 15px;
+    border: 3.5px solid var(--main-color);
+}
+
+.threats {
+    display: grid;
+    margin-top: -50px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.threats-text h4 {
+    margin: 10px 0;
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.threats-text h3 {
+    font-size: var(--h2-font);
+}
+
+.threats-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: -2rem;
+}
+
+.threats-gri {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.threats-in h5 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.threats-img img {
+    height: auto;
+    width: 100%;
+    max-width: 460px;
+    border: 2px solid var(--main-color);
+}
+
+.button2 {
+    float: left;
+    padding: 14px 40px;
+    border-radius: 0.5rem;
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 20px;
+    background: transparent;
+    color: var(--text-color);
+    border: 1px solid var(--second-color);
+    transition: all .40s ease;
+}
+
+.button2:hover {
+    transform: scale(1.01) translate(5px);
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+}
+
+@media (max-width: 970px) {
+    :root{
+        --h1-font: 4.2rem;
+        --h2-font: 2.9rem;
+        --p-font: 1rem;        
+    }
+
+    .leo-intro {
+        height: 85vh;
+        padding: 70px 3% 60px;
+    }
+
+    .threats {
+        margin-top: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .threats-img {
+        text-align: center;
+    }
+}
