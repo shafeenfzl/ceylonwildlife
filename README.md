@@ -1,2 +1,2 @@
 # ceylonwildlife
-Individual Assignment 1: Sri Lankan Wildlife Website
+Individual Assignment 2: Sri Lankan Wildlife Website
